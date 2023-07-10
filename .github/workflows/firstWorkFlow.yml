@@ -25,6 +25,8 @@ jobs:
       - name: environment variables
         env:
           STEP_VAR: "This variable is declared at the job level" 
+        run: | 
+          echo $STEP_VAR
         
   secondjob: 
     runs-on: ubuntu-latest
